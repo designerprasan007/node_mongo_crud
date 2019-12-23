@@ -1,0 +1,32 @@
+<h3 class="pt-3" >{{viewTitle}}</h3>
+
+<form action="/crud_operation" method="post"  autocomplete="off" >
+	<div class="form-group">
+		<label>Full name</label>
+		<input type="text" class="form-control" name="name" placeholder"full name" value="{{crud.name}}">
+		<div class="text-danger">
+			{{crud.nameerror}}	
+		</div>
+	</div>
+	<div class="form-group">
+                <label>email</label>
+                <input type="email" class="form-control" name="email" placeholder"email" value="{{crud.email}}">
+        	<div class="text-danger">
+                        {{crud.emailerror}}
+                </div>
+
+	</div>
+	 <div class="form-row">
+    		<div class="form-group col-md-6">
+     		 <label>Mobile</label>
+     		 <input type="text" class="form-control" name="mobile" placeholder="mobile" value="{{crud.mobile}}" >
+    		</div>
+    	<div class="form-group col-md-6">
+     		 <label>City</label>
+      		<input type="text" class="form-control" name="city" placeholder="city" value="{{crud.city}}">
+    	</div>
+  </div>
+	<div class="form-group">
+		<button class="btn btn-primary" type="submit">Submit <i class="fas fa-share"></i></button>
+	</div>
+</form>
